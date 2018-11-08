@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="app.css"/>
+    </head>
+    <body>
+        <canvas id="canvas" width="800px" height="500px"></canvas>
+        <script src="scripts.js"></script>
+        <button onclick="toggleShape(0)">circle</button>
+        <button onclick="toggleShape(1)">rectangle</button>
+        <input id="radius" type="range" min="1" max="200" value="15" oninput="setRadius(this.value)" onchange="setRadius(this.value)"/>
+        <input id="color" type="color" onchange="setColor(this.value)"/>
+        <button onclick="sendClear()">Clear</button>
+    </body>
+</html>
